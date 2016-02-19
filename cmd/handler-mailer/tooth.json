@@ -1,0 +1,17 @@
+{
+  "coordinates": {
+    "org": "handler-mailer",
+    "name": "handler-mailer",
+    "type": "golang"
+  },
+  "build": [
+    "make -f ../../Makefile srcdir=../ pkg=handler-mailer all"
+  ],
+  "version": [
+    "make -f ../../Makefile version"
+  ],
+  "clean": [
+    "make -f ../../Makefile srcdir=../.. clean"
+  ]
+}
+
