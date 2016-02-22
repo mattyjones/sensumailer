@@ -1,0 +1,21 @@
+{
+	"ImportPath": "github.com/yieldbot/sensumailer/cmd/handler-mailer",
+	"GoVersion": "go1.5",
+	"Deps": [
+		{
+			"ImportPath": "github.com/codegangsta/cli",
+			"Comment": "1.2.0-217-g5db7419",
+			"Rev": "5db74198dee1cfe60cf06a611d03a420361baad6"
+		},
+		{
+			"ImportPath": "github.com/yieldbot/sensuplugin/sensuhandler",
+			"Comment": "v1.0.0-99-g7c6f315",
+			"Rev": "7c6f3150b9655092b982044ebac554bdc91ea75b"
+		},
+		{
+			"ImportPath": "github.com/yieldbot/sensuplugin/sensuutil",
+			"Comment": "v1.0.0-99-g7c6f315",
+			"Rev": "7c6f3150b9655092b982044ebac554bdc91ea75b"
+		}
+	]
+}

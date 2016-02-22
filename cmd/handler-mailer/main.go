@@ -15,7 +15,7 @@ import (
 	// "github.com/yieldbot/sensumailer/lib"
 	"github.com/yieldbot/sensuplugin/sensuhandler"
 	"github.com/yieldbot/sensuplugin/sensuutil"
-	"log"
+	// "log"
 	"net/smtp"
 	"os"
 	// "time"
@@ -41,7 +41,7 @@ func main() {
 			sensuutil.Exit("debug")
 		}
 
-    // Get the sensu event data
+		// Get the sensu event data
 		sensuEvent := new(sensuhandler.SensuEvent)
 		sensuEvent = sensuEvent.AcquireSensuEvent()
 
@@ -51,7 +51,7 @@ func main() {
 			sensuutil.EHndlr(err)
 		}
 		defer s.Close()
-		
+
 		// Set the sender and recipient.
 		s.Mail(emailSender)
 		s.Rcpt(emailAddress)
